@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<recording>
+  <id>0a7b04708bd5d08ca4de31141975159b76136259-1582248432107</id>
+  <state>published</state>
+  <published>true</published>
+  <start_time>1582248432107</start_time>
+  <end_time>1582248453580</end_time>
+  <participants>1</participants>
+  <meeting id="0a7b04708bd5d08ca4de31141975159b76136259-1582248432107" externalId="3501689453" name="test 3333" breakout="false"/>
+  <meta>
+    <meetingId>3501689453</meetingId>
+    <meetingName>test 3333</meetingName>
+    <isBreakout>false</isBreakout>
+    <creator>&lt;saml:NameID xmlns:saml="urn:oasis:names:tc:SAML:2.0:assertion" NameQualifier="https://saml.kafe.or.kr/idp/simplesamlphp" SPNameQualifier="https://webinar.kafe.or.kr/sp/simplesamlphp" Format="urn:oasis:names:tc:SAML:2.0:nameid-format:persistent"&gt;39097f2a51f48812d7620a05376872611885dfce&lt;/saml:NameID&gt;</creator>
+  </meta>
+  <playback>
+    <format>presentation</format>
+    <link>https://app.webinar.kafe.or.kr/playback/presentation/2.0/playback.html?meetingId=0a7b04708bd5d08ca4de31141975159b76136259-1582248432107</link>
+    <processing_time>4604</processing_time>
+    <duration>11587</duration>
+    <extensions>
+      <preview>
+        <images>
+          <image width="176" height="136" alt="&#xC720;&#xC120;&#xC778;&#xD130;&#xB137;&#xACFC; &#xD5E4;&#xB4DC;&#xC14B; &#xC774;&#xC6A9;&#xC744; &#xAD8C;&#xC7A5;&#xD569;&#xB2C8;&#xB2E4;.">https://app.webinar.kafe.or.kr/presentation/0a7b04708bd5d08ca4de31141975159b76136259-1582248432107/presentation/d2d9a672040fbde2a47a10bf6c37b6a4b5ae187f-1582248432218/thumbnails/thumb-1.png</image>
+        </images>
+      </preview>
+    </extensions>
+    <size>290299</size>
+  </playback>
+  <raw_size>633927</raw_size>
+</recording>

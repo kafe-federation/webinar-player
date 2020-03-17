@@ -1,0 +1,34 @@
+<html>
+<head>
+  <title>KAFE Webinar Player</title>
+  <link rel="stylesheet" type="text/css" href="./lib/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="./css/main.css">
+  <link rel="stylesheet" href="./lib/fontawesome/css/all.css" >
+</head>
+<body>
+
+<nav class="navbar navbar-dark fixed-top" style="-webkit-app-region: drag; background-color: #2bb7eb; height: 56px!important;">
+  <a class="navbar-brand" style="">KAFE Webinar Player</a>
+  <ul class="navbar-nav mr-auto">
+    <li id="picker-btn" class="nav-item"><a class="btn btn-light btn-sm">Load</a></li>
+  </ul>
+
+  <button id="maximize-btn" class="btn btn-sm btn-light my-2" style="margin-right: 4px;" type="submit"><i class="far fa-window-maximize"></i></button>
+  <button id="close-btn" class="btn btn-sm btn-light my-2" type="submit"><i class="fas fa-times"></i></button>
+</nav>
+
+<div id="main-container" class="main-container">
+  <input id="picker" type="file" style="display: none;"/>
+  <div id="main">
+    <img src="./logo.png" style="width: 240px;"/><br/><br/>
+    <a href="https://webinar.kafe.or.kr/" target="_blank">https://webinar.kafe.or.kr</a>
+  </div>
+
+  <div id="player" style="width: 100%; height: calc(100% - 56px); position: fixed; top:56px;left:0; display: none;">
+      <iframe id="iframe" frameborder="0"></iframe>
+  </div>
+</div>
+<script type="text/javascript" src="lib/jquery.min.js"></script>
+<script type="text/javascript" src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,92 @@
+<html class="no-js" lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Loading</title>
+
+  <link rel="stylesheet" type="text/css" href="acornmediaplayer/acornmediaplayer.base.css" />
+  <link rel="stylesheet" type="text/css" href="acornmediaplayer/themes/access/acorn.access.css" />
+  <link rel="stylesheet" type="text/css" href="acornmediaplayer/themes/bigbluebutton/acorn.bigbluebutton.css" />
+  <link rel="stylesheet" type="text/css" href="css/normalize.css" />
+  <link rel="stylesheet" type="text/css" href="css/foundation.css" />
+  <link rel="stylesheet" type="text/css" href="css/foundation-icons.css" />
+  <link rel="stylesheet" type="text/css" href="css/playback.css">
+</head>
+
+<body>
+  <div id="loading">
+    <img id="load-img" class="loading-img" src="logo.png">
+    <p id="load-msg">Loading</p>
+  </div>
+  <div class="circle" id="cursor"></div>
+  <div id="playback-content" class="off-canvas-wrap" data-offcanvas>
+
+    <div class="inner-wrap">
+      <div id="navbar">
+        <a class="left-off-canvas-toggle menu-icon" href="#">
+          <i class="sidebar-icon fi-list"></i>
+        </a>
+        <h1 id="recording-title">Recording Playback</h1>
+      </div>
+
+      <aside class="left-off-canvas-menu">
+        <ul class="off-canvas-list">
+          <li><label>Slides</label></li>
+          <div id="thumbnails" role="region" aria-label="Slide thumbnails"></div>
+        </ul>
+      </aside>
+
+      <a class="exit-off-canvas"></a>
+
+      <div id="playback" role="main" class="row small-collapse">
+
+        <h2 class="show-for-sr">Presentation Slides</h2>
+        <div id="main-section" class="small-8 columns">
+          <div id="presentation-area" role="region" aria-label="Presentation" data-swap>
+            <div id="slide" role="img" aria-labelledby="slideText"></div>
+            <div id="slideText" class="show-for-sr" aria-live="polite"></div>
+          </div>
+
+          <div id="copyright"></div>
+        </div>
+
+        <div id="side-section" class="small-4 columns">
+          <div id="video-area" class="clearfix" role="region" aria-label="Video" title="Click to play or pause the playback" data-swap>
+            <!--
+                <video id="webcam">You must use an HTML5 capable browser to view this page.
+                  This playback requires modern browser, please use FF, Safari, Chrome</video>
+                -->
+          </div>
+          <div id="audio-area" role="region" aria-label="Audio">
+            <!--
+                <audio id="video">You must use an HTML5 capable browser to view this page.
+                  This playback requires modern browser, please use FF, Safari, Chrome</audio>
+                -->
+          </div>
+          <h2 class="show-for-sr">Chat Messages</h2>
+          <input type="checkbox" name="exposechat" id="exposechat" value="exposechat" class="show-for-sr" checked="checked" />
+          <label for="exposechat" class="show-for-sr">Read chat messages</label>
+          <div id="chat-area">
+            <div id="chat" aria-live="polite" role="region" aria-label="Chat messages"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script type="text/javascript" src="lib/jquery.min.js"></script>
+  <script type="text/javascript" src="lib/jquery-ui.min.js"></script>
+  <script type="text/javascript" src="lib/foundation.min.js"></script>
+  <script type="text/javascript" src="acornmediaplayer/jquery.acornmediaplayer.js"></script>
+  <script type="text/javascript" src="lib/bbblogger.js"></script>
+  <script type="text/javascript" src="lib/writing.js"></script>
+  <script type="text/javascript" src="js/playback.js"></script>
+  <script type="text/javascript" src="lib/popcorn-complete.min.js"></script>
+  <script type="text/javascript" src="lib/popcorn.chattimeline.js"></script>
+  <script type="text/javascript" src="lib/pace.min.js"></script>
+  <script>
+    $(document).foundation();
+  </script>
+</body>
+</html>

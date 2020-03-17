@@ -1,0 +1,19 @@
+머신러닝 활용
+Cell Recognition using Deep Learning
+NVIDIA
+DIGITS
+FRAMEWORK
+(Deep
+Learning)
+LIVE
+DEAD
+Automatic Cell
+Extraction
+Training
+Live / Dead
+Classifier
+(LeNet)
+Testset
+Live
+Live
+Dead

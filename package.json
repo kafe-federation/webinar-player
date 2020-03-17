@@ -1,0 +1,63 @@
+{
+    "name": "2.0",
+    "version": "1.0.0",
+    "description": "",
+    "main": "main.js",
+    "scripts": {
+        "start": "electron .",
+        "build:osx": "build --mac",
+        "build:linux": "npm run build:linux32 && npm run build:linux64",
+        "build:linux32": "build --linux --ia32",
+        "build:linux64": "build --linux --x64",
+        "build:win": "npm run build:win32 && npm run build:win64",
+        "build:win32": "build --win --ia32",
+        "build:win64": "build --win --x64"
+    },
+    "author": "",
+    "license": "ISC",
+    "devDependencies": {
+        "electron": "^8.1.1",
+        "electron-builder": "^22.4.1",
+        "electron-icon-builder": "^1.0.2"
+    },
+    "dependencies": {
+        "decompress-zip": "^0.2.2"
+    },
+    "build": {
+        "productName": "KAFE Webinar Player",
+        "appId": "kr.or.kafe.webinar.player",
+        "asar": true,
+        "protocols": {
+            "name": "kafe",
+            "schemes": [
+                "kafe"
+            ]
+        },
+        "mac": {
+            "target": [
+                "default"
+            ],
+            "icon": "./kafe-ico/mac/icon.icns"
+        },
+        "dmg": {
+            "title": "KAFE Webinar Player",
+            "icon": "./kafe-ico/mac/icon.icns"
+        },
+        "win": {
+            "target": [
+                "zip",
+                "nsis"
+            ],
+            "icon": "./kafe-ico/win/icon.ico"
+        },
+        "nsis": {
+            "oneClick": false,
+            "allowToChangeInstallationDirectory": true
+        },
+        "directories": {
+            "buildResources": "./resources/",
+            "output": "./dist/",
+            "app": "."
+        }
+    }
+}
