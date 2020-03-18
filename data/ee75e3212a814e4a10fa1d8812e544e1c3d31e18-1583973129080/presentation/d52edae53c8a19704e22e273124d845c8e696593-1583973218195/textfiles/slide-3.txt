@@ -1,8 +1,0 @@
-Type of ML
-▪ Supervised Learning : 사전 구축된 정답을 바탕으로 학습
-▪ Classification : 데이터에 대하여 정해진 범주로 분류
-▪ Regression : 데이터에 대하여 수치 등을 예측함
-▪ Unsupervised Learning : 데이터의 특징을 분석하여 정답 없이 학습
-▪ Clustering : 데이터의 특징을 바탕으로 유사한 패턴끼리 그룹으로 묶는 작업
-▪ Reinforcement Learning : Feedback을 통해 학습
-▪ DQN : Deep Q Network, 딥러닝 기반 기계학습 중 하나
